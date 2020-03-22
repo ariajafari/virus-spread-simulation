@@ -35,3 +35,23 @@ for i in range(0,5000):
         k=k+1
 
 list_of_persons[2][3].Health_Status="Infected"
+
+n=0
+for z in range(1,10):
+    for i in range(0,5000):
+        for j in range(0,5):
+            if list_of_persons[i][j].Health_Status=="Infected":
+                a=list_of_persons[i][j].Friend_ID
+                list_of_persons[a[0]][a[1]].Health_Status="Infected"
+
+    for i in range(0,5000):
+        for j in range(0,5):
+            if list_of_persons[i][j].Health_Status=="Infected":
+                for c in range(0,5):
+                    list_of_persons[i][c].Health_Status="Infected"
+    n=0
+    for i in range(0,5000):
+        for j in range(0,5):
+            if list_of_persons[i][j].Health_Status=="Infected":
+                n=n+1
+    print(z,n)
