@@ -15,3 +15,8 @@ class Person:
         self.Health_Status=Health_Status
     def check_health(self):
         print(self.ID,self.Health_Status)
+
+def index_2d(mylist, v):
+    for i, x in enumerate(mylist):
+        if v in x:
+            return ([i, x.index(v)])
