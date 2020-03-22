@@ -55,3 +55,11 @@ for z in range(1,10):
             if list_of_persons[i][j].Health_Status=="Infected":
                 n=n+1
     print(z,n)
+
+
+'''
+for i in range(0,20):
+    for j in range(0,5):
+        print(list_of_persons[i][j].ID,list_of_persons[i][j].Family_ID,list_of_persons[i][j].Friend_ID)
+        print(list_of_persons[i][j].Health_Status)
+'''
